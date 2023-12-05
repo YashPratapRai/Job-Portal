@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #3498db, #8e44ad);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .feedback-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .feedback-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .feedback-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea,
+        .feedback-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .feedback-form select {
+            appearance: none;
+            background-color: #f8f8f8;
+        }
+
+        .feedback-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-form button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<div class="feedback-container">
+    <h2>Feedback Form</h2>
+    <form class="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="feedback-type">Feedback Type:</label>
+        <select id="feedback-type" name="feedback-type" required>
+            <option value="general">General Feedback</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature-request">Feature Request</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Your Comments" rows="4" required></textarea>
+
+        <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+</div>
+
+<script>
+    function submitFeedback() {
+       
+        alert("Feedback submitted. Add your submission logic here.");
+    }
+</script>
+
+</body>
+</html>

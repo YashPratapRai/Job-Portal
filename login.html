@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #3498db, #8e44ad);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .login-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: #27ae60;
+        }
+
+        .bottom-text {
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Your Username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Your Password" required>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <p class="bottom-text">Don't have an account? <a href="singup.html">Register here</a></p>
+</div>
+
+<script>
+    function login() {
+        // Add your login logic here
+        alert("Congrats! You successfully logged in");
+    }
+</script>
+
+</body>
+</html>
